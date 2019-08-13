@@ -32,9 +32,9 @@ const Styles = styled.div`
 export const Contact = () => (
         <Styles>
         <div className="cbdbrand">
-            <p >DomPizzano14@gmail.com</p>
-            <p><a href="https://linkedin.com/in/dom-pizzano-4b85a0103/" target="_blank">Dom LinkedIn</a></p>
-            <p><a href="https://twitter.com/code_by_dom" target="_blank">@Code_By_Dom</a></p>
+            <p><a href="mailto:dompizzano14@gmail.com">DomPizzano14@gmail.com</a></p>
+            <p><a href="https://linkedin.com/in/dom-pizzano-4b85a0103/" target="_blank">LinkedIn By Dom</a></p>
+            
         </div>
         </Styles> 
     )

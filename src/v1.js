@@ -1,7 +1,81 @@
 import React from 'react';
 import styled from 'styled-components';
 const Styles = styled.div`
+.box {
+    display: flex;
+    width:100%;
+}
+.box .inner {
+    width: 380px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.box .inner:first-child {
+    background-color: #4E4E4E;
+    transform-origin: right;
+    transform: perspective(90px) rotateY(-15deg);
     
+}
+
+.box .inner:last-child {
+    background-color: #DCDCDC;
+    color: black;
+    transform-origin: left;
+    transform: perspective(90px) rotateY(15deg);
+}
+
+.box .inner span {
+    position: absolute;
+    animation: marquee 6s linear infinite;
+    a{
+        
+    }
+}
+
+.box .inner:first-child span {
+    animation-delay: 3s;
+    left: -130%;
+    color:#49fb35;
+    a{
+        display: inline-block;
+        position: relative;
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 1.5s linear infinite;
+        text-shadow: 
+            3px   0  0   #000, 
+            -3px   0  0   #000, 
+            0    3px 0   #000, 
+            0   -3px 0   #000, 
+            2px  2px 0   #000, 
+            -2px -2px 0   #000, 
+            2px -2px 0   #000, 
+            -2px  2px 0   #000,
+            2px  2px 10px #000;
+        
+    }
+}
+
+@keyframes shine {
+    from { -webkit-mask-position: 150%; }
+    to { -webkit-mask-position: -50%; }
+  }
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
     h3{
   
     color:white;
@@ -23,7 +97,7 @@ const Styles = styled.div`
         
     }
     .centerd{
-        margin: 10px auto
+        margin:auto;
     }
     tcenter{
 
@@ -40,12 +114,22 @@ const Styles = styled.div`
     }
     `;
 export const v1 = () => (
+    <div className="container">
     <Styles>
-        <div className='centerd'>
+    <div className='centerd'>
             
             
     <div class="card mb-3">
-  <h3 class="card-header tcenter" style={{textAlign:"center"}}>CodeByDom.com 2018</h3>
+  <div class="card-header centerd" style={{textAlign:"center"}}>
+  <div class="box">
+  <div class="inner">
+    <span>Code By Dom</span>
+  </div>
+  <div class="inner">
+    <span>&lt;Code&gt;&lt;/Code&gt;</span>
+  </div>
+</div>
+  </div>
   <div class="card-body">
   <iframe width="800" height="460" className="centerd" src="https://www.youtube.com/embed/fjIE8TnDpUw?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
@@ -68,7 +152,7 @@ export const v1 = () => (
     </li>
   </ul>
   <div class="card-body">
-    <a href="https://snoop-dom.github.io/codebydom/plazyv.html" target="_blank" class="card-link">CodeByDom 2018 Website</a>
+    <a href="https://snoop-dom.github.io/codebydom/home.html" target="_blank" class="card-link">CodeByDom 2018 Website</a>
   </div>
   <div class="card-footer text-muted">
     January 2018
@@ -76,4 +160,5 @@ export const v1 = () => (
 </div>
         </div>
     </Styles>
+    </div>
     )

@@ -52,10 +52,13 @@ export const roadmap = () => (
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
         <h6>Description:</h6>
-        <p>This software is a data analyitics dashboard which allow the user to drilldown and analyze complex pharamacetical and patient data </p>
+        <p>This software is a data analytics dashboard which allows the user to drilldown and analyze complex pharmaceutical and patient data.
+            In this demo we are using hundreds of thousands of generated patient records to give insights into how the drug humira is used
+            across certain patient cohorts and locations. The ability to visualize this data allows healthcare companies to better monitor 
+            how their products are being used by their patients.</p>
     </li>
     <li class="list-group-item">
-    <h6>Technologies Used:</h6>
+    <h6>Technologies:</h6>
         <p>
         <span class="badge badge-primary">Elastic Search</span>
         <span class="badge badge-success">Logstash</span>

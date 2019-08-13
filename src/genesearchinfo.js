@@ -47,16 +47,16 @@ export const genesearchinfo = () => (
     <div class="card mb-3">
   <h3 class="card-header tcenter" style={{textAlign:"center"}}>GeneSearch</h3>
   <div class="card-body">
-  <a href="/genesearch" ><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/genesearch-shot.png')} alt="Card image"></img></a>
+  <a href={process.env.PUBLIC_URL+"/#/GeneSearch"} ><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/genesearch-shot.png')} alt="Card image"></img></a>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
         <h6>Description:</h6>
         <p>This software is to be used as a clinical genetics research tool, giving the user the ability to find
-            genetic mutations relating to the user's searched medical condition. Included are link outs to an interactive ui
-            of the location of the genetic mutation, along with the clinical aritcle or publication relating to that variant.
-            The user can scroll through the list of mutation, save specific selected mutations for later, and copy and paste them 
-            into their research notes. The user can also clear thier list of saved mutations.
+           genetic mutations relating to the user's searched medical condition. Included are link outs to an interactive ui
+           of the location of the genetic mutation, along with the clinical article or publication relating to that variant.
+           The user can scroll through the list of mutation, save specific selected mutations for later, and copy and paste them
+           into their research notes. The user can also clear their list of saved mutations.
         </p>
     </li>
     <li class="list-group-item">
@@ -72,7 +72,7 @@ export const genesearchinfo = () => (
     </li>
   </ul>
   <div class="card-body">
-    <a href="/GeneSearch" class="card-link">Live Demo</a>
+    <a href={process.env.PUBLIC_URL+"/#/GeneSearch"} class="card-link">Live Demo</a>
   </div>
   <div class="card-footer text-muted">
     June 2018

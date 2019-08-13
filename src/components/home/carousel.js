@@ -37,6 +37,7 @@ const Styles = styled.div`
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+      width:100%;
     }
     .green{
       text-shadow: 0 -1px 0 rgb(91,149,82),
@@ -145,21 +146,21 @@ export const CarouselDom = () => (
         <h1 className="green">GeneSearch</h1>
         <p>Clinical Genetic Research tool to find DNA information about medical contitions</p>
         <br></br>
-        <a href="/genesearch"><img className="display" style={{height: '375px', width: '600px', display: 'block'}} src={require('../../assets/genesearch-shot.png')} alt="Card image"></img></a>
+        <a href={process.env.PUBLIC_URL+"/#/GeneSearch"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/genesearch-shot.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="/genesearch"><button type="button" class="btn btn-outline-success">Live Demo</button></a>
-        <a href="/genesearchinfo"><button type="button" class="btn btn-outline-success">More Info</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/GeneSearch"}><button type="button" class="btn btn-outline-success">Live Demo</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/genesearchinfo"}><button type="button" class="btn btn-outline-success">More Info</button></a>
       </div>
       
     </Slide>
     <Slide right>
       <div>
         <h1 className="blue">RoadMap 360 Dashboards</h1>
-        <p>Interactive Data Analytics Dashboard created to anaylize Pharmaceutical, Patient, and Genetic Data</p>
+        <p>Interactive Data Analytics Dashboard created to analyze Pharmaceutical, Patient, and Genetic Data</p>
         <br></br>
-        <a href="/roadmap"><img className="display" style={{height: '375px', width: '600px', display: 'block'}} src={require('../../assets/roadmap-dash1.png')} alt="Card image"></img></a>
+        <a href={process.env.PUBLIC_URL+"/#/roadmap"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/roadmap-dash1.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="/roadmap"><button type="button" class="btn btn-outline-primary">More Info</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/roadmap"}><button type="button" class="btn btn-outline-primary">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
@@ -167,10 +168,10 @@ export const CarouselDom = () => (
         <h1 className="green">Plazy</h1>
         <p>An audio/video add-on that allows users to search through audio/video for specific words spoken</p>
         <br></br>
-        <a href="/plazy"><img className="display" style={{height: '375px', width: '600px', display: 'block'}} src={require('../../assets/plazy.png')} alt="Card image"></img></a>
+        <a href={process.env.PUBLIC_URL+"/#/plazy"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/plazy.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="/plazy" ><button type="button" class="btn btn-outline-success">More Info</button></a>
-        <a href="https://snoop-dom.github.io/codebydom/code.html" ><button type="button" class="btn btn-outline-success">Live Demo</button></a>
+        <a href="https://snoop-dom.github.io/codebydom/plazyv.html" ><button type="button" class="btn btn-outline-success">Live Demo</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/plazy"} ><button type="button" class="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
@@ -178,10 +179,10 @@ export const CarouselDom = () => (
         <h1 className="blue">JoselSantos.com</h1>
         <p>Art website for local boston artist Joe Santos</p>
         <br></br>
-        <a href="/v1"><img className="display" style={{height: '375px', width: '600px', display: 'block'}} src={require('../../assets/jose.png')} alt="Card image"></img></a>
+        <a href={process.env.PUBLIC_URL+"/#/artsite"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/jose.png')} alt="Card image"></img></a>
         <br></br>
         <a href="https://joselsantos.com" target="_blank"><button type="button" class="btn btn-outline-primary">Link to Website</button></a>
-        <a href="/artsite" ><button type="button" class="btn btn-outline-primary">More Info</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/artsite"} ><button type="button" class="btn btn-outline-primary">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
@@ -189,10 +190,10 @@ export const CarouselDom = () => (
         <h1 className="green">CodeByDom 2018</h1>
         <p>First version of CodeByDom.com created in 2018</p>
         <br></br>
-        <a href="/v1"><img className="display" style={{height: '375px', width: '600px', display: 'block'}} src={require('../../assets/cbd.png')} alt="Card image"></img></a>
+        <a href={process.env.PUBLIC_URL+"/#/v1"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/cbd.png')} alt="Card image"></img></a>
         <br></br>
         <a href="https://snoop-dom.github.io/codebydom/home.html" target="_blank"><button type="button" class="btn btn-outline-success">Link to Website</button></a>
-        <a href="/v1" ><button type="button" class="btn btn-outline-success">More Info</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/v1"} ><button type="button" class="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
     </Carousel>

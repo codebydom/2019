@@ -52,9 +52,10 @@ export const plazy = () => (
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
         <h6>Description:</h6>
-        <p>Plazy is a video/audio add on that allows the user to search through long videos and audio files
-             for the exact moments specific words are spoken. This technology can be used for looking for topics within podcasts 
-             or important infomation pertaining to a certain topic during a long college lecture. </p>
+        <p>Plazy is a video/audio add-on that allows the user to search through long videos and audio files
+            for the exact moments specific words are spoken. This technology can be used for looking for topics within podcasts
+            or important information pertaining to a certain topic during a long college lecture.
+        </p>
     </li>
     <li class="list-group-item">
     <h6>Technologies Used:</h6>

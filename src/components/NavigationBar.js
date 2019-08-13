@@ -8,67 +8,6 @@ const Styles = styled.div`
     }
     .navbar-brand, .navbar-nav, .nav-link{
     }
-    .box {
-        display: flex;
-        width:90%;
-    }
-    .box .inner {
-        width: 380px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 2em;
-        white-space: nowrap;
-        overflow: hidden;
-        -moz-box-shadow:    inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow:         inset 0 0 10px #000000;
-    }
-    
-    .box .inner:first-child {
-        background-color: #4E4E4E;
-        transform-origin: right;
-        transform: perspective(90px) rotateY(-15deg);
-        
-    }
-    
-    .box .inner:last-child {
-        background-color: #DCDCDC;
-        color: black;
-        transform-origin: left;
-        transform: perspective(90px) rotateY(15deg);
-    }
-    
-    .box .inner span {
-        position: absolute;
-        animation: marquee 6s linear infinite;
-        a{
-            
-        }
-    }
-    
-    .box .inner:first-child span {
-        animation-delay: 3s;
-        left: -130%;
-        color:#49fb35;
-        a{
-            display: inline-block;
-            position: relative;
-            -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-            -webkit-mask-size: 200%;
-            animation: shine 1.5s linear infinite;
-            text-shadow: 
-                3px   0  0   #000, 
-                -3px   0  0   #000, 
-                0    3px 0   #000, 
-                0   -3px 0   #000, 
-                2px  2px 0   #000, 
-                -2px -2px 0   #000, 
-                2px -2px 0   #000, 
-                -2px  2px 0   #000,
-                2px  2px 10px #000;
-            
-        }
-    }
     
     @keyframes shine {
         from { -webkit-mask-position: 150%; }
@@ -205,10 +144,21 @@ const Styles = styled.div`
         margin-top:-1.2%;
     }
 
-    .dropdown-menu{
-        
-    }
+
     .dropdown-toggle.nav-link:hover{
+        color: #39ff14;        
+        text-shadow: 
+            2px   0  0   #000, 
+            -2px   0  0   #000, 
+            0    2px 0   #000, 
+            0   -2px 0   #000, 
+            1px  1px 0   #000, 
+            -1px -1px 0   #000, 
+            1px -1px 0   #000, 
+            -1px  1px 0   #000,
+            1px  1px 5px #000;
+    }
+    div.show.dropdown.nav-item a.dropdown-toggle.nav-link{
         color: #39ff14;        
         text-shadow: 
             2px   0  0   #000, 
@@ -235,6 +185,16 @@ const Styles = styled.div`
         color:rgb(72,149,236);
         text-shadow: 1px 1px 1px white;
     }
+    a.dropdown-item.active{
+        color: #39ff14;
+        text-shadow: 1px 1px 1px black;
+        font-weight:900;
+    }
+    a.dropdown-item.active p{
+        color: #39ff14;
+        text-shadow: 1px 1px 1px black;
+        font-weight:900;
+    }
     .centerd{
         margin: auto
     }
@@ -244,18 +204,33 @@ const Styles = styled.div`
         color: #39ff14;
         text-shadow: 
                 0 1px 0 #000, 
-                0 2px 0 #c9c9c9,
-                0 3px 0 #bbb,
-                0 4px 0 #b9b9b9,
-                0 5px 0 #aaa,
-                0 6px 1px rgba(0,0,0,.1),
-                0 0 5px rgba(0,0,0,.1),
-                0 1px 3px rgba(0,0,0,.3),
-                0 3px 5px rgba(0,0,0,.2),
-                0 5px 10px rgba(0,0,0,.25),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.15);
+                0 2px 0 #000,
+                0 3px 0 #000, 
+                0 4px 0 #000;
 
+    }
+    .bb{
+        
+        padding:6px;
+        background: #4e4e4e;
+        border: solid 1px limegreen;
+        border-radius:30px;
+        box-shadow:0 1px 0 limegreen, 
+        0 2px 0 #000;
+    }
+    a.nav-link.active a.link.link--navstyle span{
+        color: #39ff14;
+        
+        text-shadow: 
+            2px   0  0   #000, 
+            -2px   0  0   #000, 
+            0    2px 0   #000, 
+            0   -2px 0   #000, 
+            1px  1px 0   #000, 
+            -1px -1px 0   #000, 
+            1px -1px 0   #000, 
+            -1px  1px 0   #000,
+            1px  1px 5px #000;
     }
 
     `;
@@ -267,18 +242,19 @@ export const NavigationBar  = () => (
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="navbar-nav mr-auto">
-                    <Navbar.Brand href="/" className="navbar-brand">
-                        <div className="cbdbrand">Code By Dom</div>
+                    <Navbar.Brand href={process.env.PUBLIC_URL+"/"} className="navbar-brand">
+                        <div className="bb"><h1 className="cbdbrand">Code By Dom</h1></div>
                     </Navbar.Brand>
-                    <Nav.Link href="/"><a className="link link--navstyle" ><span data-letters="Home">Home</span></a></Nav.Link>
-                    <Nav.Item><Nav.Link href="/about"><a className="link link--navstyle" ><span data-letters="About">About</span></a></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/contact"><a className="link link--navstyle" ><span data-letters="Contact">Contact</span></a></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/v1"><a className="link link--navstyle" ><span data-letters="2018">2018</span></a></Nav.Link></Nav.Item> 
-                    <NavDropdown className="dd" title="Software Projects" >
-                    <NavDropdown.Item href="/genesearchinfo">GeneSearch<p className="small">Clinical Genetic Reasearch Tool</p></NavDropdown.Item>
-                    <NavDropdown.Item href="/roadmap">Roadmap 360 Dashboards <p className="small">Phamracutical Data Visualizaiton Dashboard</p></NavDropdown.Item>
-                    <NavDropdown.Item href="/plazy">Plazy <p className="small">Video/Audio add on that allows user to search for spoken words</p></NavDropdown.Item>
-                    <NavDropdown.Item href="/artsite">Jose L Santos Art Website<p className="small">Project for friend</p></NavDropdown.Item>
+                    <Nav.Link href={process.env.PUBLIC_URL+"/"}><a className="link link--navstyle" ><span data-letters="Home">Home</span></a></Nav.Link>
+                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/about"}><a className="link link--navstyle" ><span data-letters="About">About</span></a></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/contact"}><a className="link link--navstyle" ><span data-letters="Contact">Contact</span></a></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/v1"}><a className="link link--navstyle" ><span data-letters="2018">2018</span></a></Nav.Link></Nav.Item> 
+                    <NavDropdown  title="Software Projects" >
+                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/genesearchinfo"}>GeneSearch<p className="small">Clinical Genetic Reasearch Tool</p></NavDropdown.Item>
+                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/roadmap"}>Roadmap 360 Dashboards <p className="small">Phamracutical Data Visualizaiton Dashboard</p></NavDropdown.Item>
+                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/plazy"}>Plazy <p className="small">Video/Audio add on that allows user to search for spoken words</p></NavDropdown.Item>
+                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/viza"}>VIZA <p className="small">Music Visualizaiton For Fun</p></NavDropdown.Item>
+                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/artsite"}>Jose L Santos Art Website<p className="small">Project for friend</p></NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

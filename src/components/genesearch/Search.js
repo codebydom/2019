@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReactDOM from 'react-dom';
 import {Save} from './Save';
 import styled from 'styled-components';
-import Popup from "reactjs-popup";
+
 const Styles = styled.div`
 #main{
   text-align: center;
@@ -131,7 +131,7 @@ export class Search extends Component {
       ReactDOM.render(
         <div className="lds-ring"><div></div><div></div><div></div><div></div></div>,
         document.getElementById('spinner'));
-    axios.get('http://rest.ensembl.org/phenotype/term/homo_sapiens/'+this.state.value+'?content-type=application/json').then(res => {
+    axios.get('https://rest.ensembl.org/phenotype/term/homo_sapiens/'+this.state.value+'?content-type=application/json').then(res => {
       
       
       

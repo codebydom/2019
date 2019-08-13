@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch} from 'react-router-dom';
 import {Home} from './Home';
 import {About} from './About';
 import {Contact} from './Contact';
@@ -13,6 +13,7 @@ import {plazy} from './plazy';
 import './App.css';
 import { genesearchinfo } from './genesearchinfo';
 import { josesite } from './josesite';
+import {viza} from './viza';
 
 
 function App() {
@@ -20,17 +21,18 @@ function App() {
     <React.Fragment>
       <NavigationBar/>
       <Layout>
-        <Router>
-          <Switch>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Switch >
             <Route exact path="/" component={Home}/>
-            <Route exact path="/GeneSearch" component={GeneSearch}/>
-            <Route exact path="/about" component={About}/>
-            <Route exact path="/contact" component={Contact}/>
-            <Route exact path="/v1" component={v1}/>
-            <Route exact path="/roadmap" component={roadmap}/>
-            <Route exact path="/plazy" component={plazy}/>
-            <Route exact path="/genesearchinfo" component={genesearchinfo}/>
-            <Route exact path="/artsite" component={josesite}/>
+            <Route  path="/GeneSearch" component={GeneSearch}/>
+            <Route  path="/about" component={About}/>
+            <Route  path="/contact" component={Contact}/>
+            <Route  path="/v1" component={v1}/>
+            <Route  path="/roadmap" component={roadmap}/>
+            <Route  path="/plazy" component={plazy}/>
+            <Route  path="/genesearchinfo" component={genesearchinfo}/>
+            <Route  path="/artsite" component={josesite}/>
+            <Route  path="/viza" component={viza}/>
             <Route component={NoMatch}/>
           </Switch>
         </Router>

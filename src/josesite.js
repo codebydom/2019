@@ -55,7 +55,7 @@ export const josesite = () => (
         <p>Professional Website for Jose L Santos, a local of Boston artist and member of the Fort Point Arts Community.</p>
     </li>
     <li class="list-group-item">
-    <h6>Technologies Used:</h6>
+    <h6>Technologies:</h6>
         <p>
         <span class="badge badge-primary">WordPress</span>
         </p>
