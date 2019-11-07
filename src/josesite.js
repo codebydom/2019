@@ -62,6 +62,7 @@ export const josesite = () => (
     </li>
   </ul>
   <div class="card-body">
+    <h6>Link:</h6>
     <a href="https://joselsantos.com/" target="_blank" class="card-link">Jose L Santos Website</a>
   </div>
   <div class="card-footer text-muted">

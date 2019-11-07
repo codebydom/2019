@@ -4,6 +4,7 @@ const Styles = styled.div`
 .box {
     display: flex;
     width:100%;
+    
 }
 .box .inner {
     width: 380px;
@@ -98,6 +99,7 @@ const Styles = styled.div`
     }
     .centerd{
         margin:auto;
+        padding:10px;
     }
     tcenter{
 
@@ -114,7 +116,7 @@ const Styles = styled.div`
     }
     `;
 export const v1 = () => (
-    <div className="container">
+    
     <Styles>
     <div className='centerd'>
             
@@ -131,7 +133,7 @@ export const v1 = () => (
 </div>
   </div>
   <div class="card-body">
-  <iframe width="800" height="460" className="centerd" src="https://www.youtube.com/embed/fjIE8TnDpUw?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="800" height="460" className="centerd" src="https://www.youtube.com/embed/fjIE8TnDpUw?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
@@ -152,7 +154,8 @@ export const v1 = () => (
     </li>
   </ul>
   <div class="card-body">
-    <a href="https://snoop-dom.github.io/codebydom/home.html" target="_blank" class="card-link">CodeByDom 2018 Website</a>
+    <h6>Link:</h6>
+    <a href="https://codebydom.com" target="_blank" class="card-link">CodeByDom 2018 Website</a>
   </div>
   <div class="card-footer text-muted">
     January 2018
@@ -160,5 +163,4 @@ export const v1 = () => (
 </div>
         </div>
     </Styles>
-    </div>
     )

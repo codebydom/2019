@@ -14,6 +14,7 @@ import './App.css';
 import { genesearchinfo } from './genesearchinfo';
 import { josesite } from './josesite';
 import {viza} from './viza';
+import DataAlgo from './DataAlgo';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route  path="/genesearchinfo" component={genesearchinfo}/>
             <Route  path="/artsite" component={josesite}/>
             <Route  path="/viza" component={viza}/>
+            <Route  path="/DataAlgo" component={DataAlgo}/>
             <Route component={NoMatch}/>
           </Switch>
         </Router>

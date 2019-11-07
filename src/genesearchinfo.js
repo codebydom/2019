@@ -72,6 +72,7 @@ export const genesearchinfo = () => (
     </li>
   </ul>
   <div class="card-body">
+    <h6>Link:</h6>
     <a href={process.env.PUBLIC_URL+"/#/GeneSearch"} class="card-link">Live Demo</a>
   </div>
   <div class="card-footer text-muted">

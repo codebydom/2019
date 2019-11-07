@@ -155,7 +155,9 @@ export class viza extends Component{
               var g = barHeight + (250 * (i/bufferLength));
               var r = 10 * (i/bufferLength);
               var b = 1;
-              document.getElementById("animate").style.color = "rgb(" + r + "," + g + "," + b + ")";
+              if(document.getElementById("animate")){
+                document.getElementById("animate").style.color = "rgb(" + r + "," + g + "," + b + ")";
+              }
               ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
               ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
             

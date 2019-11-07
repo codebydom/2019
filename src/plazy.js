@@ -71,6 +71,7 @@ export const plazy = () => (
     </li>
   </ul>
   <div class="card-body">
+  <h6>Links:</h6>
     <a href="https://snoop-dom.github.io/codebydom/plazyv.html" target="_blank" class="card-link">Live Plazy Video Add-On Demo</a>
     <a href="https://snoop-dom.github.io/codebydom/plazy.html" target="_blank" class="card-link">Live Plazy Audio Player Demo</a>
   </div>

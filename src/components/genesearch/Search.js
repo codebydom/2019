@@ -79,7 +79,6 @@ export class Search extends Component {
     this.setState({value: event.target.value});
   }
   handleClear(){
-    console.log("test");
     saveList = [];
     ReactDOM.render(
       <table>

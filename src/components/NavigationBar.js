@@ -245,10 +245,10 @@ export const NavigationBar  = () => (
                     <Navbar.Brand href={process.env.PUBLIC_URL+"/"} className="navbar-brand">
                         <div className="bb"><h1 className="cbdbrand">Code By Dom</h1></div>
                     </Navbar.Brand>
-                    <Nav.Link href={process.env.PUBLIC_URL+"/"}><a className="link link--navstyle" ><span data-letters="Home">Home</span></a></Nav.Link>
-                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/about"}><a className="link link--navstyle" ><span data-letters="About">About</span></a></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/contact"}><a className="link link--navstyle" ><span data-letters="Contact">Contact</span></a></Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/v1"}><a className="link link--navstyle" ><span data-letters="2018">2018</span></a></Nav.Link></Nav.Item> 
+                    <Nav.Link href={process.env.PUBLIC_URL+"/"}><p className="link link--navstyle" ><span data-letters="Home">Home</span></p></Nav.Link>
+                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/about"}><p className="link link--navstyle" ><span data-letters="About">About</span></p></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/contact"}><p className="link link--navstyle" ><span data-letters="Contact">Contact</span></p></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/v1"}><p className="link link--navstyle" ><span data-letters="2018">2018</span></p></Nav.Link></Nav.Item> 
                     <NavDropdown  title="Software Projects" >
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/genesearchinfo"}>GeneSearch<p className="small">Clinical Genetic Reasearch Tool</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/roadmap"}>Roadmap 360 Dashboards <p className="small">Phamracutical Data Visualizaiton Dashboard</p></NavDropdown.Item>
