@@ -72,7 +72,7 @@ export const roadmap = () => (
   </ul>
   <div class="card-body">
   <h6>Link:</h6>
-    <a href="https://roadmap-tech.com/" target="_blank" class="card-link">Roadmap Technologies Website</a>
+    <a href="https://roadmap-tech.com/" target="_blank" rel="noopener noreferrer" class="card-link">Roadmap Technologies Website</a>
   </div>
   <div class="card-footer text-muted">
     December 2017

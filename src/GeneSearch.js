@@ -1,6 +1,6 @@
 import React from 'react';
 import {Search} from './components/genesearch/Search';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 const Styles = styled.div`
     div{
         text-align:center;

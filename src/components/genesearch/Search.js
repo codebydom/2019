@@ -126,7 +126,7 @@ export class Search extends Component {
   handleSubmit(event) {
     console.log("Submitted Medical Term for Search");
     
-    if(this.state.value!=""){
+    if(this.state.value!==""){
       ReactDOM.render(
         <div className="lds-ring"><div></div><div></div><div></div><div></div></div>,
         document.getElementById('spinner'));
@@ -136,7 +136,7 @@ export class Search extends Component {
       
       console.log(res.data);
       console.log(res.data.length);
-      if (res.data.length==0){
+      if (res.data.length===0){
         alert("Make sure the value you entered is spelled correctly");
         ReactDOM.render(
           <div ></div>,
@@ -164,13 +164,13 @@ export class Search extends Component {
           sschr=schr[schr.length-1].match(/[a-zA-Z]+|[0-9]+/g)//split and create list based on non number to reveal the final chromosome position out of complex string
           chr=sschr[0]
         }
-        var locl =locl+chr+"%3A"+llist[1];//compiling the link for the location to be used
-        if (res.data[i].attributes != undefined){//some data objects do not have attributes, those that do need to have their pub med ids linked to a website, here we create that link
+        locl =locl+chr+"%3A"+llist[1];//compiling the link for the location to be used
+        if (res.data[i].attributes !== undefined){//some data objects do not have attributes, those that do need to have their pub med ids linked to a website, here we create that link
           refr = res.data[i].attributes.external_reference
-          if (res.data[i].attributes.external_reference != undefined && res.data[i].attributes.external_reference.includes('PMID')){ //if there is an external reference, it continues
+          if (res.data[i].attributes.external_reference !== undefined && res.data[i].attributes.external_reference.includes('PMID')){ //if there is an external reference, it continues
             if (res.data[i].attributes.external_reference.includes(',PMID')){//if there are multiple pmids, there needs to be multiple links
             //!!NOTED ERROR!! multiple gene rows put out due to double pmids, leading to innaccurate row counts from input because more rows are being added, need to address later
-              var plist= [] = res.data[i].attributes.external_reference.split(",PMID:");
+              plist = res.data[i].attributes.external_reference.split(",PMID:");
               plist[0]=plist[0].replace("PMID:","");
               for (j=0; j < plist.length; j++){//adds each pmid gene intp data field when list gets ob pushed to it
                 plist[j]= "https://www.ncbi.nlm.nih.gov/pubmed/?term="+plist[j];
@@ -200,12 +200,12 @@ export class Search extends Component {
     
     const listHtml = list.map((li,index)=>
     <tr id={index}>
-     <td scope="row">{index}</td>
+     <td >{index}</td>
      <td ><p>{li.g}</p></td>
-     <td ><a target="_blank" href={li.loc}><button className="btn btn-outline-primary">{li.loco}</button></a></td>
+     <td ><a target="_blank" href={li.loc} rel="noopener noreferrer"><button className="btn btn-outline-primary">{li.loco}</button></a></td>
      <td >{li.v}</td>
      <td >{li.source}</td>
-     <td ><a target="_blank" href={li.link}><button href={li.link} target="_blank" className="btn btn-outline-primary">Click Here</button></a></td>
+     <td ><a target="_blank" href={li.link} rel="noopener noreferrer"><button href={li.link} target="_blank" className="btn btn-outline-primary">Click Here</button></a></td>
      <td >{li.d}</td>
      <td >{li.cs}</td>
      <td >

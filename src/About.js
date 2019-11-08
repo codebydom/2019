@@ -50,13 +50,13 @@ export const About = () => (
              code by dom has now been recreated from a html and javascript website to a react app. 
         </p>
         <p>
-            The software displayed within code by dom was developed using experience from working at comapnies such as <a href="https://www.veritasgenetics.com/" target="_blank"> Veritas Genetics</a>, <a href="https://www.optum.com/" >Optum</a>, and <a href="https://www.sunquestinfo.com/software-and-services/genetic-analysis/">Sunquest Information Systems</a> and doing projects for <a href="https://www.ge.com/">GE</a> and <a href="https://roadmap-tech.com/">RoadMap Technologies</a>.
+            The software displayed within code by dom was developed using experience from working at comapnies such as <a href="https://www.veritasgenetics.com/" target="_blank" rel="noopener noreferrer"> Veritas Genetics</a>, <a href="https://www.optum.com/" target="_blank" rel="noopener noreferrer">Optum</a>, and <a href="https://www.sunquestinfo.com/" target="_blank" rel="noopener noreferrer">Sunquest Information Systems</a> and doing projects for <a href="https://www.ge.com/" target="_blank" rel="noopener noreferrer">GE</a> and <a href="https://roadmap-tech.com/" target="_blank" rel="noopener noreferrer">RoadMap Technologies</a>.
         </p>
         <p>
             As my experience grows, so does code by dom, and even if I may not be able to update this website accordingly to show all of my current software engineering expertise, I enjoy sharing the projects I can.
             Thank you for taking the time to visit code by dom, please continue exploring the software and website. If you have any feeback, dont hesitate to contact :)  
         </p>
-        <a href="/"><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/icodebydom.jpg')} alt="Card image"></img></a>
+        <a href="/" ><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/icodebydom.jpg')} alt="Card image"></img></a>
         <p className="tc "><em>January 2018</em></p>    
     </div>
     </Styles>

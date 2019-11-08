@@ -170,7 +170,7 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/plazy"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/plazy.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://snoop-dom.github.io/codebydom/plazyv.html" ><button type="button" class="btn btn-outline-success">Live Demo</button></a>
+        <a href="https://codebydom.com/plazyv.html" ><button type="button" class="btn btn-outline-success">Live Demo</button></a>
         <a href={process.env.PUBLIC_URL+"/#/plazy"} ><button type="button" class="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
@@ -181,7 +181,7 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/artsite"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/jose.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://joselsantos.com" target="_blank"><button type="button" class="btn btn-outline-primary">Link to Website</button></a>
+        <a href="https://joselsantos.com" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-primary">Link to Website</button></a>
         <a href={process.env.PUBLIC_URL+"/#/artsite"} ><button type="button" class="btn btn-outline-primary">More Info</button></a>
       </div>
     </Slide>
@@ -192,7 +192,7 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/v1"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/cbd.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://snoop-dom.github.io/codebydom/home.html" target="_blank"><button type="button" class="btn btn-outline-success">Link to Website</button></a>
+        <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-success">Link to Website</button></a>
         <a href={process.env.PUBLIC_URL+"/#/v1"} ><button type="button" class="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>

@@ -47,7 +47,7 @@ export const josesite = () => (
     <div class="card mb-3">
   <h3 class="card-header tcenter" style={{textAlign:"center"}}>JoselSantos.com</h3>
   <div class="card-body">
-  <a href="https://joselsantos.com/" target="_blank"><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/jose.png')} alt="Card image"></img></a>
+  <a href="https://joselsantos.com/" target="_blank" rel="noopener noreferrer"><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/jose.png')} alt="Card image"></img></a>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
@@ -63,7 +63,7 @@ export const josesite = () => (
   </ul>
   <div class="card-body">
     <h6>Link:</h6>
-    <a href="https://joselsantos.com/" target="_blank" class="card-link">Jose L Santos Website</a>
+    <a href="https://joselsantos.com/" target="_blank" rel="noopener noreferrer" class="card-link">Jose L Santos Website</a>
   </div>
   <div class="card-footer text-muted">
     January 2019

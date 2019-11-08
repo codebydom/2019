@@ -155,7 +155,7 @@ export const v1 = () => (
   </ul>
   <div class="card-body">
     <h6>Link:</h6>
-    <a href="https://codebydom.com" target="_blank" class="card-link">CodeByDom 2018 Website</a>
+    <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer" class="card-link">CodeByDom 2018 Website</a>
   </div>
   <div class="card-footer text-muted">
     January 2018
