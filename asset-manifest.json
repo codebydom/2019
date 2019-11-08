@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/2019/static/css/main.2680dfa7.chunk.css",
+    "main.js": "/2019/static/js/main.540d39c0.chunk.js",
+    "main.js.map": "/2019/static/js/main.540d39c0.chunk.js.map",
+    "runtime~main.js": "/2019/static/js/runtime~main.8f2f7504.js",
+    "runtime~main.js.map": "/2019/static/js/runtime~main.8f2f7504.js.map",
+    "static/css/2.3c1ddb0a.chunk.css": "/2019/static/css/2.3c1ddb0a.chunk.css",
+    "static/js/2.7bdaeea5.chunk.js": "/2019/static/js/2.7bdaeea5.chunk.js",
+    "static/js/2.7bdaeea5.chunk.js.map": "/2019/static/js/2.7bdaeea5.chunk.js.map",
+    "index.html": "/2019/index.html",
+    "precache-manifest.e35a508a03a1021017c627c968045976.js": "/2019/precache-manifest.e35a508a03a1021017c627c968045976.js",
+    "service-worker.js": "/2019/service-worker.js",
+    "static/css/2.3c1ddb0a.chunk.css.map": "/2019/static/css/2.3c1ddb0a.chunk.css.map",
+    "static/css/main.2680dfa7.chunk.css.map": "/2019/static/css/main.2680dfa7.chunk.css.map",
+    "static/media/LI-Logo.png": "/2019/static/media/LI-Logo.c24cde28.png",
+    "static/media/cbd.png": "/2019/static/media/cbd.149735f1.png",
+    "static/media/fad.mp3": "/2019/static/media/fad.b5a46302.mp3",
+    "static/media/genesearch-shot.png": "/2019/static/media/genesearch-shot.079d544f.png",
+    "static/media/icodebydom.jpg": "/2019/static/media/icodebydom.c97aab1c.jpg",
+    "static/media/jose.png": "/2019/static/media/jose.fa6d56ad.png",
+    "static/media/matrixcode.png": "/2019/static/media/matrixcode.e645c82b.png",
+    "static/media/matrixd.png": "/2019/static/media/matrixd.00306379.png",
+    "static/media/plazy.png": "/2019/static/media/plazy.d7d41246.png",
+    "static/media/roadmap-dash1.png": "/2019/static/media/roadmap-dash1.07334105.png"
+  }
+}
