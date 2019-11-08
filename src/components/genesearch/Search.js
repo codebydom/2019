@@ -176,11 +176,13 @@ export class Search extends Component {
                 plist[j]= "https://www.ncbi.nlm.nih.gov/pubmed/?term="+plist[j];
                 var ob = {source:res.data[i].source,ref:"PMID:",link:plist[j],v:res.data[i].Variation,loco:"chr:"+chr+"   "+llist[1],loc:locl,d:res.data[i].description,g:res.data[i].attributes.associated_gene,cs:res.data[i].attributes.clinical_significance,test:1}//these are all the data points that will be inputed into the table as {{f."key"}} 
                 list.push(ob);
+                document.getElementById("spinner").setAttribute("style","display:none");
               }
             } else {
             pid = "https://www.ncbi.nlm.nih.gov/pubmed/?term="+res.data[i].attributes.external_reference.replace("PMID:","");
             var ob1 = {source:res.data[i].source,ref:"PMID:",link:pid,v:res.data[i].Variation,loco:"chr:"+chr+"   "+llist[1],loc:locl,d:res.data[i].description,g:res.data[i].attributes.associated_gene,cs:res.data[i].attributes.clinical_significance,test:2}//these are all the data points that will be inputed into the table as {{f."key"}}, this input is just for single pmid cases, the majority
             list.push(ob1);
+            document.getElementById("spinner").setAttribute("style","display:none");
           }
           } else {
         pid = "https://www.ncbi.nlm.nih.gov/clinvar/?term="+res.data[i].Variation;//using rs id for weblink if there is no pmid available, usually used with clinvar sources
