@@ -125,17 +125,17 @@ export class Search extends Component {
   }
   handleSubmit(event) {
     console.log("Submitted Medical Term for Search");
-    
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+    headers.append('Origin','http://localhost:3000');
     if(this.state.value!==""){
+      document.getElementById("spinner").setAttribute("style","display:block");
+      document.getElementById("display").setAttribute("style","display:none");
       ReactDOM.render(
         <div className="lds-ring"><div></div><div></div><div></div><div></div></div>,
         document.getElementById('spinner'));
-    axios.get('https://rest.ensembl.org/phenotype/term/homo_sapiens/'+this.state.value+'?content-type=application/json').then(res => {
-      
-      
-      
-      console.log(res.data);
-      console.log(res.data.length);
+      axios.get('https://grch37.rest.ensembl.org/phenotype/term/homo_sapiens/'+this.state.value+'?content-type=application/json').then(res => {
       if (res.data.length===0){
         alert("Make sure the value you entered is spelled correctly");
         ReactDOM.render(
@@ -198,24 +198,25 @@ export class Search extends Component {
       // find out more about the end user, likely bioinformatician, what other tools they need to use
       }
       };
+      
      }
     
     const listHtml = list.map((li,index)=>
     <tr id={index}>
-     <td >{index}</td>
-     <td ><p>{li.g}</p></td>
-     <td ><a target="_blank" href={li.loc} rel="noopener noreferrer"><button className="btn btn-outline-primary">{li.loco}</button></a></td>
+     <td >{index+1}</td>
+     <td ><p style={{wordWrap:'break-word'}}>{li.g}</p></td>
+     <td ><a target="_blank" href={li.loc} rel="noopener noreferrer"><button className="btn btn-outline-primary" style={{wordWrap:'break-word'}}>{li.loco}</button></a></td>
      <td >{li.v}</td>
      <td >{li.source}</td>
      <td ><a target="_blank" href={li.link} rel="noopener noreferrer"><button href={li.link} target="_blank" className="btn btn-outline-primary">Click Here</button></a></td>
      <td >{li.d}</td>
-     <td >{li.cs}</td>
+     <td >{li.cs? li.cs : 'N/A'}</td>
      <td >
        <Save value={index} ind={index} gene={li.g} locationLink={li.loc} location={li.loco} variant={li.v} source={li.source} pubMedLink={li.link} description={li.d} clinSig={li.cs} onSaveClick={this.handleSave}></Save>
     </td>
     </tr>
      );
-    
+     document.getElementById("display").setAttribute("style","display:block");
     ReactDOM.render(
   <div>
   <table className="table table-bordered table-hover table-sm table-fixed" >
@@ -237,7 +238,7 @@ export class Search extends Component {
     </tbody>
   </table>
     <button style={{margin:'5px'}}onClick={this.handleSave} className="btn btn-success" type="button">Show Saved</button>
-    <button style={{margin:'5px'}} type="button" class="btn btn-danger" onClick={this.handleClear}>Clear Saved</button>
+    <button style={{margin:'5px'}} type="button" className="btn btn-danger" onClick={this.handleClear}>Clear Saved</button>
     <hr></hr>
     <div id="saveListId"></div>
   </div>,
@@ -245,11 +246,17 @@ export class Search extends Component {
     );
     console.log("Parsed Response.");
     this.getStyle();
-    });
+    }).catch(error => {
+      alert(error + " Check console log for more details. I apologize for the inconvience.");
+      document.getElementById("spinner").setAttribute("style","display:none");
+    })
+    ;
     event.preventDefault();
+    
   } else{
     alert("You must enter a medical condition.")
   }
+
 }
 	render() {
 		return (
@@ -268,7 +275,7 @@ export class Search extends Component {
       </div>
     </div>
     <div className="container" id="spinner"></div>
-    <div data-spy="scroll" className="overflow-auto container" >
+    <div data-spy="scroll" className="overflow-auto container" id="display">
       <div className="table-responsive" id="dataList">
       </div>
     </div>

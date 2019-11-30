@@ -148,8 +148,8 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/GeneSearch"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/genesearch-shot.png')} alt="Card image"></img></a>
         <br></br>
-        <a href={process.env.PUBLIC_URL+"/#/GeneSearch"}><button type="button" class="btn btn-outline-success">Live Demo</button></a>
-        <a href={process.env.PUBLIC_URL+"/#/genesearchinfo"}><button type="button" class="btn btn-outline-success">More Info</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/GeneSearch"}><button type="button" className="btn btn-outline-success">Live Demo</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/genesearchinfo"}><button type="button" className="btn btn-outline-success">More Info</button></a>
       </div>
       
     </Slide>
@@ -160,7 +160,7 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/roadmap"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/roadmap-dash1.png')} alt="Card image"></img></a>
         <br></br>
-        <a href={process.env.PUBLIC_URL+"/#/roadmap"}><button type="button" class="btn btn-outline-primary">More Info</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/roadmap"}><button type="button" className="btn btn-outline-primary">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
@@ -170,8 +170,8 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/plazy"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/plazy.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://codebydom.com/plazyv.html" ><button type="button" class="btn btn-outline-success">Live Demo</button></a>
-        <a href={process.env.PUBLIC_URL+"/#/plazy"} ><button type="button" class="btn btn-outline-success">More Info</button></a>
+        <a href="https://codebydom.com/plazyv.html" ><button type="button" className="btn btn-outline-success">Live Demo</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/plazy"} ><button type="button" className="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
@@ -181,8 +181,8 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/artsite"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/jose.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://joselsantos.com" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-primary">Link to Website</button></a>
-        <a href={process.env.PUBLIC_URL+"/#/artsite"} ><button type="button" class="btn btn-outline-primary">More Info</button></a>
+        <a href="https://joselsantos.com" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-outline-primary">Link to Website</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/artsite"} ><button type="button" className="btn btn-outline-primary">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
@@ -192,8 +192,8 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/v1"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/cbd.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-success">Link to Website</button></a>
-        <a href={process.env.PUBLIC_URL+"/#/v1"} ><button type="button" class="btn btn-outline-success">More Info</button></a>
+        <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-outline-success">Link to Website</button></a>
+        <a href={process.env.PUBLIC_URL+"/#/v1"} ><button type="button" className="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
     </Carousel>
