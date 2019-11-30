@@ -126,6 +126,14 @@ Matrix(){
         document.getElementById('content')
     )
 }
+Reset(){
+    ReactDOM.render(
+        <div>
+            <p>Select a Data Function</p>
+        </div>,
+        document.getElementById('content')
+    )
+}
 // things to add
 // runtime complexity
 // queue data structure 
@@ -155,11 +163,13 @@ render() {
         <button type="button" className="btn btn-success" onClick={this.Annagram}>Annagram</button>
         <button type="button" className="btn btn-success" onClick={this.Steps}>Steps</button>
         <button type="button" className="btn btn-success" onClick={this.Vowels}>Vowels</button>
+        <button type="button" className="btn btn-success" onClick={this.Reset}>Reset</button>
+
         </div>
         </div>
         <div  id="center" className="card border-secondary mb-3" >
         <div className="card-body" id="content">
-        <p>Choose a Data Function</p>
+        <p>Select a Data Function</p>
         </div>
         </div>
         </Styles>

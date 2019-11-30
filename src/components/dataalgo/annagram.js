@@ -53,7 +53,7 @@ export class Annagram extends Component {
         ReactDOM.render(
             <div>
             <h2>{Annagram}</h2>
-            <h4><u>Ways to do this</u></h4>
+            {/* <h4><u>Ways to do this</u></h4>
             <ol>
                 <li>
                 var sa = stringA.replace(/[^\w]/g,"").toLowerCase();
@@ -91,7 +91,7 @@ export class Annagram extends Component {
                     return str.replace(/[^\w]/g,"").toLowerCase().split('').sort().join('')
 
                     </li>
-            </ol>
+            </ol> */}
             </div>
             , document.getElementById('out')
         )

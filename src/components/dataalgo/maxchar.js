@@ -44,12 +44,6 @@ export class MaxChar extends Component {
         ReactDOM.render(
             <div>
             <h2>Max: {maxChar}</h2>
-            <h4><u>Three Ways to do this</u></h4>
-            <ol>
-                <li>
-                
-                </li>
-            </ol>
             </div>
             , document.getElementById('out')
         )

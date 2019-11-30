@@ -52,7 +52,7 @@ export class Steps extends Component {
             <h6>
                 {hout}
             </h6>
-            <h5>Way to do this</h5>
+            {/* <h5>Way to do this</h5>
             n = this.state.value
             <br/>
             if(n)
@@ -74,7 +74,7 @@ export class Steps extends Component {
             console.log(hout)
             <br/>
             hout = "Check Console Log!"
-            <br/>
+            <br/> */}
             </div>,
             document.getElementById('out'))
     }

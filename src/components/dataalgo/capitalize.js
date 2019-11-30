@@ -34,7 +34,7 @@ export class Capitalize extends Component {
         ReactDOM.render(
             <div>
             <h2>{Capitalize}</h2>
-            <h4><u>Ways to do this</u></h4>
+            {/* <h4><u>Ways to do this</u></h4>
             <ol>
                 <li>
                 for (let word of str.split(' '))
@@ -43,7 +43,7 @@ export class Capitalize extends Component {
                 <br></br>
                 return words.join(' ');
                 </li>
-            </ol>
+            </ol> */}
             </div>
             , document.getElementById('out')
         )

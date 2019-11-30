@@ -29,12 +29,12 @@ export class Vowels extends Component {
         ReactDOM.render(
             <div>
             <h2>{Vowels}</h2>
-            <h4><u>Way to do this</u></h4>
+            {/* <h4><u>Way to do this</u></h4>
             <ol>
             const matches = str.match(/[aeiou]/gi)
             <br/>
             return matches ? matches.length : 0;
-            </ol>
+            </ol> */}
             </div>
             , document.getElementById('out')
         )

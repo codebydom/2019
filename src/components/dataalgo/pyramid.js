@@ -54,7 +54,7 @@ export class Pyramid extends Component {
             <h6>
                 {hout}
             </h6>
-            <h5>Way to do this</h5>
+            {/* <h5>Way to do this</h5>
             out=""
             <br/>
     pnum=1
@@ -78,7 +78,7 @@ export class Pyramid extends Component {
         }
         <br/>
         console.log(out)
-        <br/>
+        <br/> */}
     
             </div>,
             document.getElementById('out'))

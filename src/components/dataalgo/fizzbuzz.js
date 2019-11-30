@@ -44,7 +44,7 @@ export class FizzBuzz extends Component {
         ReactDOM.render(
             <div>
             <h2>{out}</h2>
-            <h4><u>Way to do this</u></h4>
+            {/* <h4><u>Way to do this</u></h4>
             <p>
                 if (i%3==0 && i%5==0)
                     console.log(fizzbuzz)
@@ -57,7 +57,7 @@ export class FizzBuzz extends Component {
                 <br></br>
                 else 
                 int
-                </p>
+                </p> */}
             </div>
             , document.getElementById('out')
         )

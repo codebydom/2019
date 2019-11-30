@@ -32,14 +32,14 @@ export class Palindrome extends Component {
         ReactDOM.render(
             <div>
             <h2>{test}</h2>
-            <h4><u>Ways to do this</u></h4>
+            {/* <h4><u>Ways to do this</u></h4>
                 <li>
                  if string.split('').reverse().join('') === string
                 </li>
                 <li>
                 return str.split('').every((char,i)=>
         return char === str[str.length - i - 1]
-                </li>
+                </li> */}
             </div>
             , document.getElementById('out')
         )

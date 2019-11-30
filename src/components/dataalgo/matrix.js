@@ -75,10 +75,10 @@ export class Matrix extends Component {
         ReactDOM.render(
             <div>
             <h2>{out}</h2>
-            <h4><u>Way to do this</u></h4>
+            {/* <h4><u>Way to do this</u></h4>
                 <img src={require('../../assets/matrixd.png')}></img>
                 <br/>
-                <img src={require('../../assets/matrixcode.png')}></img>
+                <img src={require('../../assets/matrixcode.png')}></img> */}
             </div>
             , document.getElementById('out')
         )

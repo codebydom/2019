@@ -28,7 +28,7 @@ export class ReverseString extends Component {
         ReactDOM.render(
             <div>
             <h2>{reversed}</h2>
-            <h4><u>Three Ways to do this</u></h4>
+            {/* <h4><u>Three Ways to do this</u></h4>
             <ol>
                 <li>
                 string.split('').reverse().join('')
@@ -39,7 +39,7 @@ export class ReverseString extends Component {
                 <li>
                 used .reduce() with for loop logic above
                 </li>
-            </ol>
+            </ol> */}
             </div>
             , document.getElementById('out')
         )
