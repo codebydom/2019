@@ -69,7 +69,7 @@ export class FizzBuzz extends Component {
 		return (
             <Styles>
             <form className="form-group" onSubmit={this.FizzBuzz}>
-            <label className="col-form-label" >Going through range, will print fizz every 3 and buzz every 5 and fizzbuzz for multiples of 3 and 5</label>
+            <label className="col-form-label" >Going through a number range, this function will print 'fizz' for every number thats a multiple of 3 and 'buzz' every number that's a multiple of 5 and 'fizzbuzz' for multiples of 3 and 5</label>
             <input type="text" className="form-control" placeholder="enter integer to check" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
             <button type="submit" className="btn btn-success">FIZZBUZZ</button>
             </form>

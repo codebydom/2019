@@ -55,7 +55,7 @@ export class MaxChar extends Component {
 		return (
             <Styles>
             <form className="form-group" onSubmit={this.maxchar}>
-            <label className="col-form-label" >Find Most Common Character in String</label>
+            <label className="col-form-label" >Find most common character in string</label>
             <input type="text" className="form-control" placeholder="enter string" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
             <button type="submit" className="btn btn-success">Find Max</button>
             </form>

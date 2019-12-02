@@ -85,7 +85,7 @@ export class Steps extends Component {
 		return (
             <Styles>
             <form className="form-group" onSubmit={this.Steps}>
-            <label className="col-form-label" >Print out Hashtag stepping sequence</label>
+            <label className="col-form-label" >Prints out #'s in stepping sequence</label>
             <input type="text" className="form-control" placeholder="enter integer lower than 50 to see steps" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
             <button type="submit" className="btn btn-success">Steps!</button>
             </form>

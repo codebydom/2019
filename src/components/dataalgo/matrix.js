@@ -90,7 +90,7 @@ export class Matrix extends Component {
 		return (
             <Styles>
             <form className="form-group" onSubmit={this.Matrix}>
-            <label className="col-form-label" >Enter a number a in the console log a spiral matrix will be printed out that relate to # of rows inputed</label>
+            <label className="col-form-label" >Enter a number and in the console log a spiral matrix will be printed out that relates to # of rows inputed</label>
             <input type="text" className="form-control" placeholder="enter number of rows under 15" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
             <button type="submit" className="btn btn-success">Matrix</button>
             </form>

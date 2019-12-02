@@ -55,7 +55,7 @@ export class Capitalize extends Component {
 		return (
             <Styles>
             <form className="form-group" onSubmit={this.Capitalize}>
-            <label className="col-form-label" >Make Ever Word in Sentence start with capital letter</label>
+            <label className="col-form-label" >Make every word in sentence start with capital letter</label>
             <input type="text" className="form-control" placeholder="enter sentence to capitalize" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
             <button type="submit" className="btn btn-success">Capitalize!</button>
             </form>

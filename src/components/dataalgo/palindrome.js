@@ -52,7 +52,7 @@ export class Palindrome extends Component {
             <Styles>
             <form className="form-group" onSubmit={this.testpalindrome}>
             <label className="col-form-label" >Palindrome Test</label>
-            <input type="text" className="form-control" placeholder="return true or false to see if input is palindrome" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
+            <input type="text" className="form-control" placeholder="return true or false to see if input is a palindrome" id="inputDefault" onChange={this.handleChange} value={this.state.value}></input>
             <button type="submit" className="btn btn-success">Palindrome?</button>
             </form>
             <div id="out"></div>
