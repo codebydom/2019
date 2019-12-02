@@ -20,7 +20,8 @@ const Styles = styled.div`
       #canvas {
         position: flex;
         width: 100%;
-        height: 100%;
+        height: 5%;
+        margin-top:-246px;
       }
       
       audio {
@@ -30,6 +31,10 @@ const Styles = styled.div`
         width:70%
         width: calc(100% - 20px);
         display:none;
+      }
+      #animate{
+          
+          
       }
     `;
 
@@ -114,7 +119,7 @@ export class viza extends Component{
           audio.play();
           var context = new AudioContext();
           
-          console.log("testing");
+          //console.log("testing");
           var src = context.createMediaElementSource(audio);
           var analyser = context.createAnalyser();
       
@@ -128,7 +133,7 @@ export class viza extends Component{
           analyser.fftSize = 256;
       
           var bufferLength = analyser.frequencyBinCount;
-          console.log(bufferLength);
+          //console.log(bufferLength);
       
           var dataArray = new Uint8Array(bufferLength);
       
@@ -165,6 +170,9 @@ export class viza extends Component{
             }
           }
           audio.style.display='block';
+          //document.getElementById("animate").style.height = "90%";
+          //document.getElementById("canvas").style.position = "absolute";
+          
           audio.play();
           renderFrame();
       };
@@ -177,9 +185,8 @@ export class viza extends Component{
             <button className="btn btn-outline-success btn-lg" id="thefile" onClick={this.handleClick}>{this.header}</button>
             <br></br>
             <div id="cont">
-            <h1 id="animate"> </h1>
             <canvas id="canvas"></canvas>
-            
+            <h1 id="animate"></h1>
             <div><audio id="audio" controls onPlay={this.onPlay}></audio></div>
             </div>
 </div>

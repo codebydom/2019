@@ -253,9 +253,9 @@ export const NavigationBar  = () => (
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/genesearchinfo"}>GeneSearch<p className="small">Clinical Genetic Reasearch Tool</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/roadmap"}>Roadmap 360 Dashboards <p className="small">Phamracutical Data Visualizaiton Dashboard</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/plazy"}>Plazy <p className="small">Video/Audio add on that allows user to search for spoken words</p></NavDropdown.Item>
-                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/viza"}>VIZA <p className="small">Music Visualizaiton For Fun</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/artsite"}>Jose L Santos Art Website<p className="small">Project for friend</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/DataFun"}>Data Fun<p className="small">Data manipulating functions (work in progress)</p></NavDropdown.Item>
+                    <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/viza"}>VIZA <p className="small">Music Visualizaiton For Fun</p></NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
