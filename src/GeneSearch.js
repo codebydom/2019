@@ -8,7 +8,7 @@ const Styles = styled.div`
     h1{
       color:white;
       font-weight:900;
-      font-size:70px;
+      font-size:40px;
       text-shadow: 0 1px 0 #bbb, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,

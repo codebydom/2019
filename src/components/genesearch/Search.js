@@ -54,7 +54,10 @@ td{
   max-width:400px;
   white-space: normal;
 }
-
+button{
+  padding:6px;
+  margin-top:3px;
+}
     `;
 const theadStyle = {
   display:"block",
@@ -65,6 +68,7 @@ const tbodyStyle = {
   height:"400px",
   width:"100%"
 }
+var b = ""
 var saveList = [];
 export class Search extends Component {
   
@@ -112,7 +116,16 @@ export class Search extends Component {
     //console.log(saveList);
 
   }
-    
+  build37(){
+    document.getElementById("37").className="btn btn-primary active"
+    document.getElementById("38").className="btn btn-primary"
+    b = "grch37."
+  }
+  build38(){
+    document.getElementById("38").className="btn btn-primary active"
+    document.getElementById("37").className="btn btn-primary"
+    b = "grch38."
+  }
   getStyle(){
     document.getElementById("indH").setAttribute("style","width:"+document.getElementById("0").getElementsByTagName('td')[0].offsetWidth.toString()+"px");
     document.getElementById("geneH").setAttribute("style","width:"+document.getElementById("0").getElementsByTagName('td')[1].offsetWidth.toString()+"px");
@@ -128,12 +141,21 @@ export class Search extends Component {
     console.log("Submitted Medical Term for Search");
     
     if(this.state.value!==""){
+      if (b===""){
+        alert("Select either GRCh37 or GRCh38 before searching")
+        return;
+      } else if(b==="grch38.") {
+        b=""
+      }
       document.getElementById("spinner").setAttribute("style","display:block");
       document.getElementById("display").setAttribute("style","display:none");
       ReactDOM.render(
         <div className="lds-ring"><div></div><div></div><div></div><div></div></div>,
         document.getElementById('spinner'));
-      axios.get('https://grch37.rest.ensembl.org/phenotype/term/homo_sapiens/'+this.state.value+'?content-type=application/json').then(res => {
+      axios.get('https://'+b+'rest.ensembl.org/phenotype/term/homo_sapiens/'+this.state.value+'?content-type=application/json').then(res => {
+      if (b===""){
+        b="grch38."
+      }
       if (res.data.length===0){
         alert("Make sure the value you entered is spelled correctly");
         ReactDOM.render(
@@ -265,6 +287,10 @@ export class Search extends Component {
       <div className="input-group">
         <form onSubmit={this.handleSubmit} >
         <input id="sinput" type="text" value={this.state.value} onChange={this.handleChange} className="form-control text-center" style={{float:"left",border:'1px solid lightgrey',borderRadius:'8px'}}/>
+        <div className="btn-group" role="group" aria-label="Basic example">
+            <button id="37" type="button" className="btn btn-primary" onClick={this.build37} style={{textTransform:"initial"}}>GRCh37</button>
+            <button id="38" type="button" className="btn btn-primary" onClick={this.build38} style={{textTransform:"initial"}}>GRCh38</button>
+        </div>
         <span className="input-group-btn ">
           <button type="submit" className="btn btn-primary btn-lg btn-block"  style={{float:"left",border:'1px solid lightgrey',borderRadius:'8px'}}>Search</button>
           <p className="small">to return genetic data associated with that condition</p>
