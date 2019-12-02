@@ -121,43 +121,43 @@ export const v1 = () => (
     <div className='centerd'>
             
             
-    <div class="card mb-3">
-  <div class="card-header centerd" style={{textAlign:"center"}}>
-  <div class="box">
-  <div class="inner">
+    <div className="card mb-3">
+  <div className="card-header centerd" style={{textAlign:"center"}}>
+  <div className="box">
+  <div className="inner">
     <span>Code By Dom</span>
   </div>
-  <div class="inner">
+  <div className="inner">
     <span>&lt;Code&gt;&lt;/Code&gt;</span>
   </div>
 </div>
   </div>
-  <div class="card-body">
-  <iframe width="800" height="460" className="centerd" src="https://www.youtube.com/embed/fjIE8TnDpUw?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div className="card-body">
+  <iframe width="800" height="460" className="centerd" src="https://www.youtube.com/embed/fjIE8TnDpUw?&autoplay=1&mute=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">
         <h6>Description:</h6>
         <p>The 2018 version of  codebydom.com, a website built from scratch as a way to showcase my software projects and demos. As I looked for professional opportunities the need to showcase my work grew, as a result, CodeByDom.com was created.
         </p>
     </li>
-    <li class="list-group-item">
+    <li className="list-group-item">
     <h6>Technologies:</h6>
         <p>
-        <span class="badge badge-primary">JavaScript</span>
-        <span class="badge badge-success">HTML</span>
-        <span class="badge badge-info">CSS</span>
-        <span class="badge badge-warning">Go Daddy</span>
-        <span class="badge badge-danger">jQuery</span>
-        <span class="badge badge-secondary">ajax</span>
+        <span className="badge badge-primary">JavaScript</span>
+        <span className="badge badge-success">HTML</span>
+        <span className="badge badge-info">CSS</span>
+        <span className="badge badge-warning">Go Daddy</span>
+        <span className="badge badge-danger">jQuery</span>
+        <span className="badge badge-secondary">ajax</span>
         </p>
     </li>
   </ul>
-  <div class="card-body">
+  <div className="card-body">
     <h6>Link:</h6>
-    <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer" class="card-link">CodeByDom 2018 Website</a>
+    <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer" className="card-link">CodeByDom 2018 Website</a>
   </div>
-  <div class="card-footer text-muted">
+  <div className="card-footer text-muted">
     January 2018
   </div>
 </div>

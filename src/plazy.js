@@ -44,38 +44,38 @@ export const plazy = () => (
         <div className='centerd'>
             
             
-    <div class="card mb-3">
-  <h3 class="card-header tcenter" style={{textAlign:"center"}}>Plazy</h3>
-  <div class="card-body">
-  <iframe width="800" height="460" src="https://www.youtube.com/embed/sxvtW5c-tVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div className="card mb-3">
+  <h3 className="card-header tcenter" style={{textAlign:"center"}}>Plazy</h3>
+  <div className="card-body">
+  <iframe width="800" height="460" src="https://www.youtube.com/embed/sxvtW5c-tVw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">
         <h6>Description:</h6>
         <p>Plazy is a video/audio add-on that allows the user to search through long videos and audio files
             for the exact moments specific words are spoken. This technology can be used for looking for topics within podcasts
             or important information pertaining to a certain topic during a long college lecture.
         </p>
     </li>
-    <li class="list-group-item">
+    <li className="list-group-item">
     <h6>Technologies Used:</h6>
         <p>
-        <span class="badge badge-primary">JavaScript</span>
-        <span class="badge badge-success">PHP</span>
-        <span class="badge badge-info">IBM Watson Speech API</span>
-        <span class="badge badge-warning">jQuery</span>
-        <span class="badge badge-danger">HTML</span>
-        <span class="badge badge-secondary">CSS</span>
-        <span class="badge badge-light">Bash</span>
+        <span className="badge badge-primary">JavaScript</span>
+        <span className="badge badge-success">PHP</span>
+        <span className="badge badge-info">IBM Watson Speech API</span>
+        <span className="badge badge-warning">jQuery</span>
+        <span className="badge badge-danger">HTML</span>
+        <span className="badge badge-secondary">CSS</span>
+        <span className="badge badge-light">Bash</span>
         </p>
     </li>
   </ul>
-  <div class="card-body">
+  <div className="card-body">
   <h6>Links:</h6>
-    <a href="http://codebydom.com/plazyv.html" target="_blank" rel="noopener noreferrer" class="card-link">Live Plazy Video Add-On Demo</a>
-    <a href="http://codebydom.com/plazy.html" target="_blank" rel="noopener noreferrer" class="card-link">Live Plazy Audio Player Demo</a>
+    <a href="http://codebydom.com/plazyv.html" target="_blank" rel="noopener noreferrer" className="card-link">Live Plazy Video Add-On Demo</a>
+    <a href="http://codebydom.com/plazy.html" target="_blank" rel="noopener noreferrer" className="card-link">Live Plazy Audio Player Demo</a>
   </div>
-  <div class="card-footer text-muted">
+  <div className="card-footer text-muted">
     December 2017
   </div>
 </div>

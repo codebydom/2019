@@ -44,28 +44,28 @@ export const josesite = () => (
         <div className='centerd'>
             
             
-    <div class="card mb-3">
-  <h3 class="card-header tcenter" style={{textAlign:"center"}}>JoselSantos.com</h3>
-  <div class="card-body">
+    <div className="card mb-3">
+  <h3 className="card-header tcenter" style={{textAlign:"center"}}>JoselSantos.com</h3>
+  <div className="card-body">
   <a href="https://joselsantos.com/" target="_blank" rel="noopener noreferrer"><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/jose.png')} alt="Card image"></img></a>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">
         <h6>Description:</h6>
         <p>Professional Website for Jose L Santos, a local of Boston artist and member of the Fort Point Arts Community.</p>
     </li>
-    <li class="list-group-item">
+    <li className="list-group-item">
     <h6>Technologies:</h6>
         <p>
-        <span class="badge badge-primary">WordPress</span>
+        <span className="badge badge-primary">WordPress</span>
         </p>
     </li>
   </ul>
-  <div class="card-body">
+  <div className="card-body">
     <h6>Link:</h6>
-    <a href="https://joselsantos.com/" target="_blank" rel="noopener noreferrer" class="card-link">Jose L Santos Website</a>
+    <a href="https://joselsantos.com/" target="_blank" rel="noopener noreferrer" className="card-link">Jose L Santos Website</a>
   </div>
-  <div class="card-footer text-muted">
+  <div className="card-footer text-muted">
     January 2019
   </div>
 </div>

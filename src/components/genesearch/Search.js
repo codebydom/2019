@@ -86,7 +86,7 @@ export class Search extends Component {
       document.getElementById('saveListId'))
   }
   handleSave(e){
-    console.log(e);
+    //console.log(e);
     if (!saveList.includes(e) && e.ind!=null){
       saveList.push(e);
     }
@@ -109,9 +109,10 @@ export class Search extends Component {
       document.getElementById('saveListId'))
     }
     
-    console.log(saveList);
+    //console.log(saveList);
 
   }
+    
   getStyle(){
     document.getElementById("indH").setAttribute("style","width:"+document.getElementById("0").getElementsByTagName('td')[0].offsetWidth.toString()+"px");
     document.getElementById("geneH").setAttribute("style","width:"+document.getElementById("0").getElementsByTagName('td')[1].offsetWidth.toString()+"px");
@@ -125,10 +126,7 @@ export class Search extends Component {
   }
   handleSubmit(event) {
     console.log("Submitted Medical Term for Search");
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-    headers.append('Origin','http://localhost:3000');
+    
     if(this.state.value!==""){
       document.getElementById("spinner").setAttribute("style","display:block");
       document.getElementById("display").setAttribute("style","display:none");
@@ -150,7 +148,7 @@ export class Search extends Component {
       for (i = 0; i < res.data.length; i++){ //for loop goes through the number of records selected by user
         var pid="";//single pid used for pub med links 
         var plist =[];//list of pmid when one record has mutiple
-        var refr="";//type of id used in link
+        //var refr="";//type of id used in link
         var locl ="https://useast.ensembl.org/Homo_sapiens/Location/View?r=";//this is link for the location 
         var llist = []; //list used in splicing data for location
         var chr="";//chromosome for the position, input for link
@@ -166,7 +164,7 @@ export class Search extends Component {
         }
         locl =locl+chr+"%3A"+llist[1];//compiling the link for the location to be used
         if (res.data[i].attributes !== undefined){//some data objects do not have attributes, those that do need to have their pub med ids linked to a website, here we create that link
-          refr = res.data[i].attributes.external_reference
+          //refr = res.data[i].attributes.external_reference
           if (res.data[i].attributes.external_reference !== undefined && res.data[i].attributes.external_reference.includes('PMID')){ //if there is an external reference, it continues
             if (res.data[i].attributes.external_reference.includes(',PMID')){//if there are multiple pmids, there needs to be multiple links
             //!!NOTED ERROR!! multiple gene rows put out due to double pmids, leading to innaccurate row counts from input because more rows are being added, need to address later
@@ -203,10 +201,10 @@ export class Search extends Component {
     
     const listHtml = list.map((li,index)=>
     <tr id={index}>
-     <td >{index+1}</td>
+     <td >{index}</td>
      <td ><p style={{wordWrap:'break-word'}}>{li.g}</p></td>
      <td ><a target="_blank" href={li.loc} rel="noopener noreferrer"><button className="btn btn-outline-primary" style={{wordWrap:'break-word'}}>{li.loco}</button></a></td>
-     <td >{li.v}</td>
+     <td><a target="_blank" href={"https://www.ncbi.nlm.nih.gov/snp/"+li.v} rel="noopener noreferrer">{li.v}</a></td>
      <td >{li.source}</td>
      <td ><a target="_blank" href={li.link} rel="noopener noreferrer"><button href={li.link} target="_blank" className="btn btn-outline-primary">Click Here</button></a></td>
      <td >{li.d}</td>
@@ -227,7 +225,7 @@ export class Search extends Component {
 		    <th id="locH" className="text-center text-primary">Location</th>
 		    <th id="varH" className="text-center text-primary">Variation</th>
 		    <th id="srcH" className="text-center text-primary">Source</th>
-		    <th id="webH" className="text-center text-primary">Weblink</th>
+		    <th id="webH" className="text-center text-primary">PubMed</th>
 		    <th id="desH" className="text-center text-primary">Description</th>
 		    <th id="clinH" className="text-center text-primary">Clin. Sig.</th>
         <th id="saveH" className="text-center text-primary">Save</th>

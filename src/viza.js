@@ -46,7 +46,7 @@ export class viza extends Component{
         var audio = document.getElementById("audio");
         var head = document.getElementById("animate");
         
-        console.log(Math.round(100*audio.currentTime)/100);
+        //console.log(Math.round(100*audio.currentTime)/100);
         switch(Math.round(10*audio.currentTime)/10) {
             case 7.4:
                 head.innerHTML = "C";

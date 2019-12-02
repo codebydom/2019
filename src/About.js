@@ -42,7 +42,7 @@ const Styles = styled.div`
 export const About = () => (
     <Styles>
     
-    <div class="hit-the-floor">About</div>
+    <div className="hit-the-floor">About</div>
     <div className="container">
         <h1>Code By Dom</h1>
         <br></br>

@@ -44,37 +44,37 @@ export const roadmap = () => (
         <div className='centerd'>
             
             
-    <div class="card mb-3">
-  <h3 class="card-header tcenter" style={{textAlign:"center"}}>Roadmap 360 Dashboards</h3>
-  <div class="card-body">
-  <iframe align="middle"  width="800" height="460" src="https://www.youtube.com/embed/jyIsQBnotak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div className="card mb-3">
+  <h3 className="card-header tcenter" style={{textAlign:"center"}}>Roadmap 360 Dashboards</h3>
+  <div className="card-body">
+  <iframe align="middle"  width="800" height="460" src="https://www.youtube.com/embed/jyIsQBnotak" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">
         <h6>Description:</h6>
         <p>This software is a data analytics dashboard which allows the user to drilldown and analyze complex pharmaceutical and patient data.
             In this demo we are using hundreds of thousands of generated patient records to give insights into how the drug humira is used
             across certain patient cohorts and locations. The ability to visualize this data allows healthcare companies to better monitor 
             how their products are being used by their patients.</p>
     </li>
-    <li class="list-group-item">
+    <li className="list-group-item">
     <h6>Technologies:</h6>
         <p>
-        <span class="badge badge-primary">Elastic Search</span>
-        <span class="badge badge-success">Logstash</span>
-        <span class="badge badge-info">Kibana</span>
-        <span class="badge badge-warning">Ms SQL</span>
-        <span class="badge badge-danger">HTML</span>
-        <span class="badge badge-secondary">CSS</span>
-        <span class="badge badge-light">Markdown</span>
+        <span className="badge badge-primary">Elastic Search</span>
+        <span className="badge badge-success">Logstash</span>
+        <span className="badge badge-info">Kibana</span>
+        <span className="badge badge-warning">Ms SQL</span>
+        <span className="badge badge-danger">HTML</span>
+        <span className="badge badge-secondary">CSS</span>
+        <span className="badge badge-light">Markdown</span>
         </p>
     </li>
   </ul>
-  <div class="card-body">
+  <div className="card-body">
   <h6>Link:</h6>
-    <a href="https://roadmap-tech.com/" target="_blank" rel="noopener noreferrer" class="card-link">Roadmap Technologies Website</a>
+    <a href="https://roadmap-tech.com/" target="_blank" rel="noopener noreferrer" className="card-link">Roadmap Technologies Website</a>
   </div>
-  <div class="card-footer text-muted">
+  <div className="card-footer text-muted">
     December 2017
   </div>
 </div>

@@ -44,13 +44,13 @@ export const genesearchinfo = () => (
         <div className='centerd'>
             
             
-    <div class="card mb-3">
-  <h3 class="card-header tcenter" style={{textAlign:"center"}}>GeneSearch</h3>
-  <div class="card-body">
+    <div className="card mb-3">
+  <h3 className="card-header tcenter" style={{textAlign:"center"}}>GeneSearch</h3>
+  <div className="card-body">
   <a href={process.env.PUBLIC_URL+"/#/GeneSearch"} ><img className="display centerd" style={{height: '375px', width: '600px', display: 'block'}} src={require('./assets/genesearch-shot.png')} alt="Card image"></img></a>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <ul className="list-group list-group-flush">
+    <li className="list-group-item">
         <h6>Description:</h6>
         <p>This software is to be used as a clinical genetics research tool, giving the user the ability to find
            genetic mutations relating to the user's searched medical condition. Included are link outs to an interactive ui
@@ -59,23 +59,23 @@ export const genesearchinfo = () => (
            into their research notes. The user can also clear their list of saved mutations.
         </p>
     </li>
-    <li class="list-group-item">
+    <li className="list-group-item">
     <h6>Technologies:</h6>
         <p>
-        <span class="badge badge-primary">JavaScript</span>
-        <span class="badge badge-success">HTML</span>
-        <span class="badge badge-info">CSS</span>
-        <span class="badge badge-warning">AXIOS</span>
-        <span class="badge badge-danger">React</span>
-        <span class="badge badge-secondary">Bootstrap</span>
+        <span className="badge badge-primary">JavaScript</span>
+        <span className="badge badge-success">HTML</span>
+        <span className="badge badge-info">CSS</span>
+        <span className="badge badge-warning">AXIOS</span>
+        <span className="badge badge-danger">React</span>
+        <span className="badge badge-secondary">Bootstrap</span>
         </p>
     </li>
   </ul>
-  <div class="card-body">
+  <div className="card-body">
     <h6>Link:</h6>
-    <a href={process.env.PUBLIC_URL+"/#/GeneSearch"} class="card-link">Live Demo</a>
+    <a href={process.env.PUBLIC_URL+"/#/GeneSearch"} className="card-link">Live Demo</a>
   </div>
-  <div class="card-footer text-muted">
+  <div className="card-footer text-muted">
     June 2018
   </div>
 </div>

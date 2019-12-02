@@ -106,16 +106,16 @@ const Styles = styled.div`
 
 export const Contact = () => (
         <Styles>
-            <div class="button-container">
+            <div className="button-container">
    
-            <div class="button-flipper">
-                <button class="front-button">Email</button>
-                <a href="mailto:dompizzano14@gmail.com"><button class="back-button">DomPizzano14@gmail.com</button></a>
+            <div className="button-flipper">
+                <button className="front-button">Email</button>
+                <a href="mailto:dompizzano14@gmail.com"><button className="back-button">DomPizzano14@gmail.com</button></a>
             </div>
             
             </div>
         <div>
-            <a href="https://www.linkedin.com/in/dom-pizzano" target="_blank" rel="noopener noreferrer"><button class="linkedin" ><img src={require('./assets/LI-Logo.png')} alt="Card image"></img></button></a>
+            <a href="https://www.linkedin.com/in/dom-pizzano" target="_blank" rel="noopener noreferrer"><button className="linkedin" ><img src={require('./assets/LI-Logo.png')} alt="Card image"></img></button></a>
             
         </div>
         
