@@ -251,6 +251,7 @@ export const NavigationBar  = () => (
                     <Nav.Item><Nav.Link href={process.env.PUBLIC_URL+"/#/v1"}><p className="link link--navstyle" ><span data-letters="2018">2018</span></p></Nav.Link></Nav.Item> 
                     <NavDropdown  title="Software Projects" >
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/genesearchinfo"}>GeneSearch<p className="small">Clinical Genetic Reasearch Tool</p></NavDropdown.Item>
+                    <NavDropdown.Item href="https://codebydom.github.io/GS2/" target="_blank">GeneSearch shRNA<p className="small">Genetic Editing Reasearch Tool</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/roadmap"}>Roadmap 360 Dashboards <p className="small">Phamracutical Data Visualizaiton Dashboard</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/plazy"}>Plazy <p className="small">Video/Audio add on that allows user to search for spoken words</p></NavDropdown.Item>
                     <NavDropdown.Item href={process.env.PUBLIC_URL+"/#/artsite"}>Jose L Santos Art Website<p className="small">Project for friend</p></NavDropdown.Item>

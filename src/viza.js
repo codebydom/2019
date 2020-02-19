@@ -104,6 +104,7 @@ export class viza extends Component{
             case 14.4:
                 head.innerHTML = "<div style='background-color:#4e4e4e; width:50%; margin:auto; border: solid 1px limegreen; border-radius:30px; box-shadow:0 1px 0 limegreen, 0 2px 0 #000;'><a style='color: #39ff14; text-shadow: 0 1px 0 #000, 0 2px 0 #000,0 3px 0 #000, 0 4px 0 #000;'>Code By Dom</a></div>";
                 break;
+                
             
             
             

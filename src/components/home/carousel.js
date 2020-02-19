@@ -155,7 +155,17 @@ export const CarouselDom = () => (
     </Slide>
     <Slide right>
       <div>
-        <h1 className="blue">RoadMap 360 Dashboards</h1>
+        <h1 className="blue">GeneSearch shRNA</h1>
+        <p>Search engine that returns shRNA and ORF CSV data from The Broad Institute that relates to the genes searched.</p>
+        <br></br>
+        <a href="https://codebydom.github.io/GS2/" target="_blank"><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/gs2.png')} alt="Card image"></img></a>
+        <br></br>
+        <a href="https://codebydom.github.io/GS2/" target="_blank"><button type="button" className="btn btn-outline-primary">More Info</button></a>
+      </div>
+    </Slide>
+    <Slide right>
+      <div>
+        <h1 className="green">RoadMap 360 Dashboards</h1>
         <p>Interactive Data Analytics Dashboard created to analyze Pharmaceutical, Patient, and Genetic Data</p>
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/roadmap"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/roadmap-dash1.png')} alt="Card image"></img></a>
@@ -165,18 +175,18 @@ export const CarouselDom = () => (
     </Slide>
     <Slide right>
       <div>
-        <h1 className="green">Plazy</h1>
+        <h1 className="blue">Plazy</h1>
         <p>An audio/video add-on that allows users to search through audio/video for specific words spoken</p>
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/plazy"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/plazy.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://codebydom.com/plazyv.html" ><button type="button" className="btn btn-outline-success">Live Demo</button></a>
+        <a href="https://codebydom.com/plazyv.html" target="_blank"><button type="button" className="btn btn-outline-success">Live Demo</button></a>
         <a href={process.env.PUBLIC_URL+"/#/plazy"} ><button type="button" className="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
     <Slide right>
       <div>
-        <h1 className="blue">JoselSantos.com</h1>
+        <h1 className="green">JoselSantos.com</h1>
         <p>Art website for local boston artist Joe Santos</p>
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/artsite"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/jose.png')} alt="Card image"></img></a>
@@ -187,7 +197,7 @@ export const CarouselDom = () => (
     </Slide>
     <Slide right>
       <div>
-        <h1 className="green">CodeByDom 2018</h1>
+        <h1 className="blue">CodeByDom 2018</h1>
         <p>First version of CodeByDom.com created in 2018</p>
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/v1"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/cbd.png')} alt="Card image"></img></a>
