@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94be052d09c532eee54ca16f9037c0c2",
+    "revision": "4b2aeb402e667a1880f915a77dd007d9",
     "url": "/2019/index.html"
   },
   {
-    "revision": "47f1bccfd88cdce34aef",
+    "revision": "ac69a76c7a82130fbe5b",
     "url": "/2019/static/css/2.3c1ddb0a.chunk.css"
   },
   {
-    "revision": "ba92fa95c4b9cdf0b02d",
+    "revision": "6676735cb73a4d680356",
     "url": "/2019/static/css/main.2680dfa7.chunk.css"
   },
   {
-    "revision": "47f1bccfd88cdce34aef",
-    "url": "/2019/static/js/2.e637fda0.chunk.js"
+    "revision": "ac69a76c7a82130fbe5b",
+    "url": "/2019/static/js/2.c248b3b9.chunk.js"
   },
   {
-    "revision": "ba92fa95c4b9cdf0b02d",
-    "url": "/2019/static/js/main.ea293ae0.chunk.js"
+    "revision": "6676735cb73a4d680356",
+    "url": "/2019/static/js/main.0982dfc1.chunk.js"
   },
   {
     "revision": "5b659db50188d87137d1",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "079d544f2e3ea41eef5784bef362bde9",
     "url": "/2019/static/media/genesearch-shot.079d544f.png"
+  },
+  {
+    "revision": "d5655a4a0bdfc6f7bf4b3909a5811bfd",
+    "url": "/2019/static/media/gs2.d5655a4a.png"
   },
   {
     "revision": "c97aab1cd1e302d1d2a684bf5c41b579",
