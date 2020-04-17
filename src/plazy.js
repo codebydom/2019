@@ -72,8 +72,8 @@ export const plazy = () => (
   </ul>
   <div className="card-body">
   <h6>Links:</h6>
-    <a href="http://codebydom.com/plazyv.html" target="_blank" rel="noopener noreferrer" className="card-link">Live Plazy Video Add-On Demo</a>
-    <a href="http://codebydom.com/plazy.html" target="_blank" rel="noopener noreferrer" className="card-link">Live Plazy Audio Player Demo</a>
+    <a href="https://codebydom.github.io/2018/plazyv.html" target="_blank" rel="noopener noreferrer" className="card-link">Live Plazy Video Add-On Demo</a>
+    <a href="https://codebydom.github.io/2018/plazy.html" target="_blank" rel="noopener noreferrer" className="card-link">Live Plazy Audio Player Demo</a>
   </div>
   <div className="card-footer text-muted">
     December 2017

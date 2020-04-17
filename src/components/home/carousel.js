@@ -180,7 +180,7 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/plazy"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/plazy.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://codebydom.com/plazyv.html" target="_blank"><button type="button" className="btn btn-outline-success">Live Demo</button></a>
+        <a href="https://codebydom.github.io/2018/plazyv.html" target="_blank"><button type="button" className="btn btn-outline-success">Live Demo</button></a>
         <a href={process.env.PUBLIC_URL+"/#/plazy"} ><button type="button" className="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
@@ -202,7 +202,7 @@ export const CarouselDom = () => (
         <br></br>
         <a href={process.env.PUBLIC_URL+"/#/v1"}><img className="display" style={{height: '375px', width: '50%', display: 'block'}} src={require('../../assets/cbd.png')} alt="Card image"></img></a>
         <br></br>
-        <a href="https://codebydom.com" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-outline-success">Link to Website</button></a>
+        <a href="https://codebydom.github.io/2018/home.html" target="_blank" rel="noopener noreferrer"><button type="button" className="btn btn-outline-success">Link to Website</button></a>
         <a href={process.env.PUBLIC_URL+"/#/v1"} ><button type="button" className="btn btn-outline-success">More Info</button></a>
       </div>
     </Slide>
