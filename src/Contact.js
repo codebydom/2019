@@ -110,7 +110,7 @@ export const Contact = () => (
    
             <div className="button-flipper">
                 <button className="front-button">Email</button>
-                <a href="mailto:dompizzano14@gmail.com"><button className="back-button">DomPizzano14@gmail.com</button></a>
+                <a href="mailto:code.by.dom@gmail.com"><button className="back-button">code.by.dom@gmail.com</button></a>
             </div>
             
             </div>
